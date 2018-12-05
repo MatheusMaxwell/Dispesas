@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/relative"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tipo"
+                android:text="Tipo"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Spinner
+                android:id="@+id/spTipo"
+                android:layout_below="@id/tipo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        <TextView
+                android:id="@+id/pago"
+                android:text="Pago"
+                android:layout_below="@id/spTipo"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Spinner
+                android:id="@+id/spPago"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/pago"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/spPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txtData"
+                    android:text="Data"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <CheckBox
+                    android:id="@+id/chkData"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+            <TextView
+                    android:id="@+id/txtData1"
+                    android:background="@drawable/main_bk_elements"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txtAte"
+                    android:text="até"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txtData2"
+                    android:visibility="invisible"
+                    android:background="@drawable/main_bk_elements"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
