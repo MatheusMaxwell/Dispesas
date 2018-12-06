@@ -49,9 +49,11 @@ class MainActivity : AppCompatActivity() {
 
             builder.create().show()
 
+        }
 
+        btnNew.setOnClickListener {
 
-
+            val viewNewDispesa = layoutInflater.inflate(R.layout.layout_new_dispesa, null)
 
         }
 
