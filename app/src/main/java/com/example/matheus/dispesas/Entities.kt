@@ -16,7 +16,9 @@ class Entities {
         @ColumnInfo(name = "valor")
         var valor: Float?,
         @ColumnInfo(name = "pago")
-        var pago: Boolean
+        var pago: Boolean,
+        @ColumnInfo(name = "data")
+        var data: String
 
     ){
         @NonNull
